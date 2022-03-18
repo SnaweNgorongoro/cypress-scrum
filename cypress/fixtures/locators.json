@@ -1,0 +1,7 @@
+{
+    "login" : {
+        "email" : ":nth-child(1) > .el-form-item__content > .el-input > .el-input__inner",
+        "password" : "[type='password']",
+        "submit" : ".vs-u-text--left > .vs-c-btn"
+    }
+}

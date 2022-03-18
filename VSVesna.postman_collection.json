@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "927b8041-40b1-4036-b9cb-9880a01d2107",
+		"name": "VSVesna",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"snawe_2@yahoo.co.uk\",\r\n    \"password\": \"misica1304\",\r\n    \"g-recaptcha-response\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cypress-api.vivifyscrum-stage.com/api/v2/login",
+					"protocol": "https",
+					"host": [
+						"cypress-api",
+						"vivifyscrum-stage",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new organization-positive case",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name ",
+							"value": "New task",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cypress-api.vivifyscrum-stage.com/api/v2/my-organizations",
+					"protocol": "https",
+					"host": [
+						"cypress-api",
+						"vivifyscrum-stage",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"my-organizations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
